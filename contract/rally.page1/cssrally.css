@@ -1,0 +1,98 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(img/audi.rally.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main sidebar"
+        "footer footer";
+    grid-template-columns: 500px 500px 500px auto;
+    grid-template-rows: 300px 310px 30px;
+    height: 98vh;
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(128, 128, 128, 0.8);
+    padding: 7%;
+    font-size: 100%;
+    border-radius: 15px;
+    grid-column: 1 / 4;
+
+}
+h1 {
+ grid-column: 2/4;
+}
+.side {
+    grid-area: sidebar;
+    background-color: rgb(128, 128, 128, 0.8);
+    padding: 1%;
+    grid-column: 4 / 5;
+    border-radius: 15px;
+    grid-row: 2 / 5;
+
+}
+
+.main {
+    align-content: space-evenly;
+    text-align: -webkit-center;
+    border-radius: 15px;
+    background-color: rgb(128, 128, 128, 0.8);
+    grid-column-start: 1;
+}
+
+
+.footer {
+    grid-area: bottom;
+    background-color: rgb(128, 128, 128, 0.8);
+    padding: 2%;
+    grid-column: -4/-2;
+    border-radius: 15px;
+}
+table, tr, th {
+    border: 1px solid black;
+    border-spacing: 30px;
+    border-radius: 10px;
+    font-size: 115%;
+    border-style: double;
+}
+button, tr:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+button {
+    background: none;
+    border: none;
+    font-size: 115%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+section {
+    background-color: rgb(128, 128, 128, 0.8);
+    padding: 2%;
+    border-radius: 15px;
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+#confiG {
+    align-self: top;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.profilePic {
+    transform: translateX(80px);
+}
+.userName {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transform: translateY(5px);
+}
+#name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transform: translatex(10px);
+}
+#lastName {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
