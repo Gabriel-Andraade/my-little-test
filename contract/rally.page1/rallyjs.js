@@ -12,37 +12,41 @@ document.addEventListener("DOMContentLoaded", () => {
     
 }
 
-});
-                                                                                                                 
+}); 
 
-function pilots () {
-    document.getElementById("pilots").innerHTML = "em breve nossos pilotos.";
-}
-
-function patreon () {
-    document.getElementById("patreon").innerHTML = "bbbb";
-}
-
-function team () {
-    document.getElementById("team").innerHTML = "ccccc";
-}
-
-function purchase () {
-    document.getElementById("purchase").innerHTML = "ddddd"; 
-}
-
-function nextEvent () {
-    document.getElementById("nextEvent").innerHTML = "eeeee"
-}
-
-function contact () {
-    document.getElementById("contact").innerHTML = "fffff"
-}
-
-function workWithUs () {
-    document.getElementById("workWithUs").innerHTML = "ggggggggg"
-}
-
-function consumeOfUser() {
-    document.getElementById("consumeOfUser").innerHTML = "hhhhhhhhhhhh"
-}
+function showInfo(topic) {
+    const infoCard = document.getElementById('infoCard');
+    const infoText = document.getElementById('infoText');
+        switch (topic) {
+                case 'pilots':
+            infoText.innerHTML = "os nossos pilotos!!!!.<br>Seguindo o rank de expêrincias temos:<br>1.";
+            break;
+                case 'patreon':
+            infoText.innerHTML = "oi";
+            break;
+                case 'team':
+            infoText.innerHTML = "bb";
+            break;
+            case 'purchase':
+                infoText.innerHTML = "vv";
+                break;
+                case 'nextEvent':
+            infoText.innerHTML = "dd";
+            break;
+            case 'contact':
+                infoText.innerHTML = "ss";
+                break;
+                case 'workWithUs':
+            infoText.innerHTML = "ee";
+            break;
+            case 'consumeOfUser':
+                infoText.innerHTML = "rr";
+                break;
+            
+        }
+     
+        infoCard.classList.add('show');   
+            if (infoCard.classList.contains('show')) {
+            }
+    
+    }

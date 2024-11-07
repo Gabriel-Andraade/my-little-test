@@ -3,6 +3,7 @@ body {
     background-image: url(img/audi.rally.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 .grid-container {
@@ -42,8 +43,10 @@ h1 {
     align-content: space-evenly;
     text-align: -webkit-center;
     border-radius: 15px;
+    overflow: auto;
     background-color: rgb(128, 128, 128, 0.8);
-    grid-column-start: 1;
+    grid-column:1/2;
+    grid-row: 2/4;
 }
 
 
@@ -79,11 +82,13 @@ section {
     grid-row: 1/2;
 }
 #confiG {
-    align-self: top;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-column: 4/5;
 }
 .profilePic {
-    transform: translateX(80px);
+    grid-column: 4/5;
+    grid-row: 1/2;
+    align-self: center;
 }
 .userName {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -95,4 +100,23 @@ section {
 }
 #lastName {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.info-card {
+    width: 300px;
+    height: 200px;
+    background-color: aliceblue;
+    border: 1px solid #ccc;
+    padding: 20px;
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    transform: translateX(350%);
+    transition: transform 0.3s ease;
+    z-index: 10;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0,0.2);
+    overflow: auto;
+}
+.info-card.show {
+    transform: translateX(0);
 }

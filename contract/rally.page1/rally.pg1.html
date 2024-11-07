@@ -12,23 +12,26 @@
     <div class="grid-container">
 
         <header class="header"><h1>Bem vindos ao Brasil rally champioship</h1></header>
-        <section><P class="userName">User:</P><span id="name"> </span> <span id="lastName"></span>
-            <img class="profilePic" src="c:\Users\lenir\Downloads\istockphoto.jpg" width="120" height="120">
-            <button id="confiG" type="button" onclick="confiG">configurações</button>      
-            </section>
+        <section id="userTag"><p>User:</P><span id="name"> </span> <span id="lastName"></span></section>
+            <button id="confiG" type="button" onclick="confiG">configurações</button>
+            <img title="não é possível adicionar uma foto de perfil" class="profilePic" src="c:\Users\lenir\Downloads\istockphoto.jpg" width="120" height="120">      
 
             <nav class="side"><table>
-                <tr><th id="pilots"><button type="button" onclick="pilots()">nossos pilotos</button><span class="info-text"></span></th></tr>
-                <tr><th id="patreon"><button type="button" onclick="patreon()">patrocinadores</button></th></tr>
-                <tr><th id="team"><button type="button" onclick="team()">equipes</button></th></tr>
-                <tr><th id="purchase"><button type="button" onclick="purchase()">loja virtual</button></th></tr>
-                <tr><th id="nextEvent"><button type="button" onclick="nextEvent()">próximos eventos</button></th></tr>
-                <tr><th id="contact"><button type="button" onclick="contact()">contatos</button></th></tr>
-                <tr><th id="workWithUs"><button type="button" onclick="workWithUs()">trabalhe conosco!</button></th></tr>
-                <tr><th id="consumeOfUser"><button type="button" onclick="consumeOfUser()">consumo do espectador</button></th></tr>
-
+                <tr><th id="pilots"><button type="button" onclick="showInfo('pilots')">nossos pilotos</button></th></tr>
+                <tr><th id="patreon"><button type="button" onclick="showInfo('patreon')">patrocinadores</button></th></tr>
+                <tr><th id="team"><button type="button" onclick="showInfo('team')">equipes</button></th></tr>
+                <tr><th id="purchase"><button type="button" onclick="showInfo('purchase')">loja virtual</button></th></tr>
+                <tr><th id="nextEvent"><button type="button" onclick="showInfo('nextEvent')">próximos eventos</button></th></tr>
+                <tr><th id="contact"><button type="button" onclick="showInfo('contact')">contatos</button></th></tr>
+                <tr><th id="workWithUs"><button type="button" onclick="showInfo('workWithUs')">trabalhe conosco!</button></th></tr>
+                <tr><th id="consumeOfUser"><button type="button" onclick="showInfo('consumeOfUser')">consumo do espectador</button></th></tr>
         </table></nav>
-    <main class="main">conteudo principal</main>
+    <main class="main"><p>olá caçador de adrenalinas! bem vindo novamente na nova iniciativa no mundo do rally.</p>
+                       <p>aqui em nosso site, você vê uma aba á direita contendo informações sobre nossas equipes, pilotos, loja virtual e etc</p>
+    </main>
+                <div id="infoCard" class="info-card">
+                        <p id="infoText"></p>
+                </div>
         <footer class="footer">@ direito autoral</footer>
     
     </div>
