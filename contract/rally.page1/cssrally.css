@@ -1,9 +1,21 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-image: url(img/audi.rally.webp);
+    background-image: url(img.vd.1/audi.rally.webp);
+    animation: animaFundo 30s infinite;
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
+}
+@keyframes animaFundo {
+    30% {
+        background-image: url(img.vd.1/audi_porsche_rally.webp);
+    }
+    50% { 
+        background-image: url(img.vd.1/bmw_rally.webp);
+    }
+    80% {
+        background-image: url(img.vd.1/polo_rally.webp);
+    }
 }
 
 .grid-container {
@@ -88,7 +100,8 @@ section {
 .profilePic {
     grid-column: 4/5;
     grid-row: 1/2;
-    align-self: center;
+    position: relative;
+    left: 50%;
 }
 .userName {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -102,20 +115,21 @@ section {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .info-card {
-    width: 300px;
-    height: 200px;
+    width: 500px;
+    height: 450px;
     background-color: aliceblue;
     border: 1px solid #ccc;
     padding: 20px;
     position: absolute;
-    right: 20px;
-    top: 100px;
+    right: 410px;
+    top: 310px;
     transform: translateX(350%);
-    transition: transform 0.3s ease;
+    transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
     z-index: 10;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0,0.2);
     overflow: auto;
+    font-size: 155%;
 }
 .info-card.show {
     transform: translateX(0);

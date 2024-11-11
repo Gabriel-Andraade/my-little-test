@@ -37,6 +37,35 @@
             <label for="number">Número de Telefone:</label>
                 <input type="tel" id="number" required>
 
+            <label for="selectType">Tipo de conta:</label>
+            <select id="selectType" required>
+                <option value="">selecione</option>
+                <option value="Mecânico">Mecânico</option>
+                <option value="Piloto">Piloto</option>
+                <option value="Espectador">Espectador</option>
+            </select>    
+
+                <div id="pilotOptions" style="display: none;">
+                    <label for="experience">qual a sua experiência?</label>
+                <select id="experience">
+                            <option value="beginner">Iniciante</option>
+                            <option value="intermediary">intermediário</option>
+                            <option value="advanced">avançado</option>
+                </select>
+                    <label for="carType">Qual seu veiculo?</label>
+                    <input type="text" id="carType" placeholder="marca e nome">
+                </div>
+
+                <div id="mechanicOptions" style="display: none;">
+                    <label for="experience">qual a sua experiência?</label>
+                <select id="experience">
+                            <option value="beginner">Iniciante</option>
+                            <option value="intermediary">intermediário</option>
+                            <option value="advanced">avaçado</option>
+                </select>
+                    <label for="teamType">possui alguma equipe?</label>
+                    <input type="text" id="teamType" placeholder="nome da equipe">
+                </div>
             <label for="password">Senha:</label>
                 <input type="password" id="password" required>
 
